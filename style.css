@@ -29,7 +29,7 @@ a { color: var(--accent); text-decoration: none; }
 
 header {
     background: linear-gradient(90deg,#ffffffcc,#f0f6ffcc);
-    backdrop-filter: saturate(120%) blur(4px);
+    backdrop-filter: saturate(120%) blur(2px);
     border-bottom: 1px solid #e6eef9;
 }
 
@@ -97,7 +97,7 @@ body {
     margin: 0;
     /* Attach your image here */
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-                url('Gem2.png') center/cover no-repeat;
+                url('Gem1.png') center/cover no-repeat;
     /* ^^^ Replace 'your-image.jpg' with your actual image filename */
     display: flex;
     align-items: center;

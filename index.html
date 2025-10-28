@@ -36,7 +36,7 @@
             el.textContent = text.slice(0, --i);
             if (i === 0) {
                 forward = true;
-                setTimeout(typeLoop, 500); // pause before typing again
+                setTimeout(typeLoop, 250); // pause before typing again
             } else {
                 setTimeout(typeLoop, 50);
             }
