@@ -88,17 +88,24 @@ button.primary {
 }
 
 /* 
-    To add your translucent background image:
+    Background image with blur and overlay settings:
     1. Place your image file (e.g., bg.jpg or bg.png) in the project folder.
-    2. Replace 'your-image.jpg' below with your actual image filename.
+    2. Replace 'Gem3.png' below with your actual image filename if different.
 */
 body {
     min-height: 100vh;
     margin: 0;
-    /* Attach your image here */
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    /* Background image with very subtle blur and dark overlay */
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
                 url('Gem3.png') center/cover no-repeat;
-    /* ^^^ Replace 'your-image.jpg' with your actual image filename */
+    /* 
+       TUNING CONTROLS:
+       - Dark overlay opacity: Change the 0.6 values in rgba(0,0,0,0.6) above
+         (0.0 = no overlay, 1.0 = completely dark)
+       - Background blur: Adjust the blur() value in the filter property below
+         (0px = no blur, higher values = more blur)
+    */
+    filter: blur(1px); /* Very subtle blur - adjust this value to tune blur amount */
     display: flex;
     align-items: center;
     justify-content: center;
