@@ -96,8 +96,8 @@ body {
     min-height: 100vh;
     margin: 0;
     /* Background image with very subtle blur and dark overlay */
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-                url('Gem3.png') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+                url('Gem1.png') center/cover no-repeat;
     /* 
        TUNING CONTROLS:
        - Dark overlay opacity: Change the 0.6 values in rgba(0,0,0,0.6) above
@@ -105,7 +105,7 @@ body {
        - Background blur: Adjust the blur() value in the filter property below
          (0px = no blur, higher values = more blur)
     */
-    filter: blur(1px); /* Very subtle blur - adjust this value to tune blur amount */
+    filter: blur(0px); /* Very subtle blur - adjust this value to tune blur amount */
     display: flex;
     align-items: center;
     justify-content: center;
