@@ -97,7 +97,7 @@ body {
     margin: 0;
     /* Attach your image here */
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-                url('Gem1.png') center/cover no-repeat;
+                url('Gem3.png') center/cover no-repeat;
     /* ^^^ Replace 'your-image.jpg' with your actual image filename */
     display: flex;
     align-items: center;
