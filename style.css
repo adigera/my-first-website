@@ -96,7 +96,7 @@ body {
     min-height: 100vh;
     margin: 0;
     /* Background image with very subtle blur and dark overlay */
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
                 url('Gem1.png') center/cover no-repeat;
     /* 
        TUNING CONTROLS:
