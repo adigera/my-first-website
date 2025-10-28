@@ -86,3 +86,34 @@ button.primary {
     font-weight: 600;
     cursor: pointer;
 }
+
+/* 
+    To add your translucent background image:
+    1. Place your image file (e.g., bg.jpg or bg.png) in the project folder.
+    2. Replace 'your-image.jpg' below with your actual image filename.
+*/
+body {
+    min-height: 100vh;
+    margin: 0;
+    /* Attach your image here */
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+                url('Gem1.png') center/cover no-repeat;
+    /* ^^^ Replace 'your-image.jpg' with your actual image filename */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-content {
+    text-align: center;
+    width: 100%;
+}
+
+#typewriter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}

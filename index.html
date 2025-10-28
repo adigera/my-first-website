@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="My First Website — a simple starter template." />
     <title>My First Website</title>
-
     <link rel="stylesheet" href="style.css">
+    <!-- 
+        To use your background image:
+        1. Place your image file (e.g., bg.jpg or bg.png) in this project folder.
+        2. In style.css, set the background-image property for body as shown in the comment.
+    -->
 </head>
 <body>
+    <!-- Main centered text -->
+    <div class="center-content">
+        <span id="typewriter"></span>
+    </div>
+
+    <script>
+    // Typewriter effect that repeats
+    const text = "Learning to Design...";
+    const el = document.getElementById('typewriter');
+    let i = 0, forward = true;
+
+    function typeLoop() {
+        if (forward) {
+            el.textContent = text.slice(0, i++);
+            if (i > text.length) {
+                forward = false;
+                setTimeout(typeLoop, 1000); // pause before deleting
+            } else {
+                setTimeout(typeLoop, 100);
+            }
+        } else {
+            el.textContent = text.slice(0, --i);
+            if (i === 0) {
+                forward = true;
+                setTimeout(typeLoop, 500); // pause before typing again
+            } else {
+                setTimeout(typeLoop, 50);
+            }
+        }
+    }
+    typeLoop();
+    </script>
+
     <a class="skip" href="#main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden">Skip to content</a>
 
     <div class="container" style="padding-top:1rem;">
