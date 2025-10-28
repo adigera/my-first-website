@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="My First Website — a simple starter template." />
+    <title>My First Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip" href="#main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden">Skip to content</a>
+
+    <div class="container" style="padding-top:1rem;">
+        <p style="margin:0;font-weight:700">Hello world</p>
+    </div>
+
+    <header>
+        <div class="container top">
+            <div class="brand">
+                <div class="logo">MF</div>
+                <div>
+                    <div style="font-size:.95rem">My First Website</div>
+                    <div style="font-size:.75rem;color:var(--muted);margin-top:2px">A simple starter template</div>
+                </div>
+            </div>
+            <nav aria-label="Main navigation">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container" role="main">
+        <section class="hero">
+            <div>
+                <h1>Build something simple, fast, and accessible</h1>
+                <p class="lead">A lightweight HTML starter to help you ship your first static site. Semantic, responsive, and easy to customize.</p>
+                <p>
+                    <a href="#features"><button class="primary">Get started</button></a>
+                    <a href="#about" style="margin-left:.6rem;color:var(--muted)">Learn more →</a>
+                </p>
+            </div>
+
+            <aside class="card" aria-labelledby="status-title">
+                <h2 id="status-title" style="margin:.1rem 0;">Project status</h2>
+                <p style="margin:.4rem 0 .6rem;color:var(--muted)">Ready for development. Add your HTML, CSS, and assets into this folder to begin building.</p>
+                <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+                    <small style="background:#eef6ff;color:#0747a6;padding:.25rem .5rem;border-radius:6px">HTML</small>
+                    <small style="background:#f3f7ff;color:#0b74de;padding:.25rem .5rem;border-radius:6px">CSS</small>
+                    <small style="background:#f7f9fb;color:#6b7280;padding:.25rem .5rem;border-radius:6px">No frameworks</small>
+                </div>
+            </aside>
+        </section>
+
+        <section id="features" style="margin-top:1.25rem">
+            <h2 style="margin:.2rem 0 1rem">Features</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 style="margin:.2rem 0">Semantic markup</h3>
+                    <p style="color:var(--muted);margin:.5rem 0 0">Uses header, main, section, aside, and footer for better accessibility and SEO.</p>
+                </div>
+                <div class="card">
+                    <h3 style="margin:.2rem 0">Responsive layout</h3>
+                    <p style="color:var(--muted);margin:.5rem 0 0">Mobile-first styles and simple grid to adapt to different screen sizes.</p>
+                </div>
+                <div class="card">
+                    <h3 style="margin:.2rem 0">Easy to customize</h3>
+                    <p style="color:var(--muted);margin:.5rem 0 0">Minimal CSS variables and clean structure make customization straightforward.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" style="margin-top:1.25rem">
+            <h2 style="margin:.2rem 0 1rem">About</h2>
+            <div class="card">
+                <p style="margin:0;color:var(--muted)">Place content, add pages, and connect a deploy pipeline (GitHub Pages, Netlify, Vercel, etc.) when you're ready to publish.</p>
+            </div>
+        </section>
+
+        <section id="contact" style="margin:1.25rem 0 2rem">
+            <h2 style="margin:.2rem 0 1rem">Contact</h2>
+            <form class="card" action="#" method="post" style="display:grid;gap:.65rem">
+                <label>
+                    <div style="font-size:.9rem;margin-bottom:.25rem">Name</div>
+                    <input name="name" type="text" placeholder="Your name" style="width:100%;padding:.6rem;border:1px solid #e6eef9;border-radius:8px" />
+                </label>
+                <label>
+                    <div style="font-size:.9rem;margin-bottom:.25rem">Email</div>
+                    <input name="email" type="email" placeholder="you@example.com" style="width:100%;padding:.6rem;border:1px solid #e6eef9;border-radius:8px" />
+                </label>
+                <label>
+                    <div style="font-size:.9rem;margin-bottom:.25rem">Message</div>
+                    <textarea name="message" rows="4" placeholder="Write a short message" style="width:100%;padding:.6rem;border:1px solid #e6eef9;border-radius:8px"></textarea>
+                </label>
+                <div style="display:flex;justify-content:flex-end">
+                    <button type="submit" class="primary">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="max-width:var(--maxw);margin:0 auto;color:var(--muted)">© <span id="year"></span> My First Website — Built with a simple starter template.</div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
